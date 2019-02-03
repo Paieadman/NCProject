@@ -7,6 +7,6 @@ public class Tmp {
         String pass = "root";
 
         DBConnection dBConnection = new DBConnection();
-        dBConnection.dbConnection(URL,user,pass);
+        dBConnection.dbConnection();
     }
 }

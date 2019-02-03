@@ -1,17 +1,14 @@
 package com.company.dto;
 
-
-import java.io.Serializable;
-
-public class Dish implements Serializable {
+public class User {
     private int id;
     private String name;
-    private int cost;
+    private int idrole;
 
-    public Dish(int id, String name, int cost) {
+    public User(int id, String name, int idrole) {
         this.id = id;
         this.name = name;
-        this.cost = cost;
+        this.idrole = idrole;
     }
 
     public int getId() {
@@ -30,11 +27,11 @@ public class Dish implements Serializable {
         this.name = name;
     }
 
-    public int getCost() {
-        return cost;
+    public int getIdrole() {
+        return idrole;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    public void setIdrole(int idrole) {
+        this.idrole = idrole;
     }
 }

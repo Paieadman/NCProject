@@ -7,7 +7,10 @@ import java.sql.*;
 public class DBConnection {
 
 
-    public void dbConnection(String URL, String user, String pass){
+    public Statement dbConnection(){
+        String URL = "jdbc:mysql://127.0.0.1:3306/kafe?verifyServerCertificate=false&useSSL=false&requireSSL=false&useLegacyDatetimeCode=false&amp&serverTimezone=UTC";/*?useUnicode=true&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";*/
+        String user = "root";
+        String pass = "root";
         Connection connection;
 
         try{
@@ -21,9 +24,10 @@ public class DBConnection {
             } else {
                 System.out.println("shit");
             }
-            connection.close();
+            return statement;
         }   catch (SQLException e){
             e.printStackTrace();
         }
+        return null;
     }
 }

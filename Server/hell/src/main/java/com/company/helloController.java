@@ -64,7 +64,7 @@ public class helloController {
 
         return firstName+secondName+" customer added sucsessfully";
     }
-
+/*
     @RequestMapping("/menu")
     public String menu()
     {
@@ -126,6 +126,6 @@ public class helloController {
     }
 
 
-
+*/
 
 }//how to send ajax request via jquery
